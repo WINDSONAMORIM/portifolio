@@ -1,0 +1,59 @@
+.avatar {
+  position: relative;
+  width: 10rem;
+  height: 15rem;
+  background-color: #1976d2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.avatar::after {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #d400d4
+  );
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+.avatar::before {
+  content: "";
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #00ccff
+  );
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.avatar img {
+  position: absolute;
+  background-color: #1976d2;
+  border-radius: 50%;
+  width: 95%;
+  height: 95%;
+  inset: 5px;
+  z-index: 1;
+}
