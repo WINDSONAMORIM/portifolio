@@ -1,7 +1,9 @@
 .avatar {
+  display: flex;
+  justify-content: center;
   position: relative;
-  width: 10rem;
-  height: 15rem;
+  width: 7rem;
+  height: 9rem;
   background-color: #1976d2;
   border-radius: 50%;
   display: flex;
