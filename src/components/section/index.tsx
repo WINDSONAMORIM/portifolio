@@ -22,7 +22,7 @@ export const Section = (props :SectionProps) => {
 
     return(
         <>
-            <h2 className="digitando">{text}</h2>
+            <h1 className="digitando">{text}</h1>
         </>
     )
 }

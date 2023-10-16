@@ -1,16 +1,15 @@
-import REact from 'react';
+import React from 'react';
 import { Avatar } from "../../components/avatar";
 import { Wrapper } from "../../components/wrapper";
 import { Section } from '../../components/section';
 import { SocialMedia } from '../../components/socialMedia';
 
 export const Home =  () => {
-    console.log('home')
     return(
         <>
         <Wrapper>
             <Avatar />
-            <Section texto='Desenvolvimeneseto Web'  />
+            <Section texto='Desenvolvimento Web'  />
             <p style={{fontFamily:'Roboto', color:'#FFFFFF', margin: '20px 2px', fontSize: '4vw', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <strong>
               Olá e bem-vindo(a) É um prazer ter você aqui e poder compartilhar um
