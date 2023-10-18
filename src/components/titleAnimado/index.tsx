@@ -5,7 +5,7 @@ interface SectionProps{
     texto: string
 }
 
-export const Section = (props :SectionProps) => {
+export const TitleAnimado = (props :SectionProps) => {
 
     const [text, setText] = useState('');
 

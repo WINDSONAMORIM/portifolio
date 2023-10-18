@@ -2,8 +2,16 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(6, 1, 59, 0.74);
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
+.container.mobile{
+    flex-direction: row;
+}
+
+/* @media (max-width: 767px) {
+    .container{
+        flex-direction: row;          
+    }
+} */
