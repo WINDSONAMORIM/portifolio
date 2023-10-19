@@ -7,8 +7,7 @@ import { Header } from '../../components/header';
 import { About } from '../../components/about';
 
 export const Home =  () => {
-    return(
-        <>
+    return(        
         <Wrapper>
             <Header>
                 <Avatar />
@@ -16,7 +15,6 @@ export const Home =  () => {
             </Header>
             <About />
             <SocialMedia />
-        </Wrapper>        
-        </>
-    )
+        </Wrapper>
+        )
 }

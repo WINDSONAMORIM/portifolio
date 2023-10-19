@@ -1,9 +1,10 @@
 import React from 'react'
+import { Grid } from "@mui/material"
 import './style.css';
 
 export const About = () => {
     return(
-        <>
+        <Grid item md={6}>
           <p>
               Olá e bem-vindo(a) É um prazer ter você aqui e poder compartilhar um
               pouco do meu trabalho na área de desenvolvimento. Neste espaço,
@@ -20,6 +21,6 @@ export const About = () => {
               disposição para qualquer dúvida ou esclarecimento.            
           </p>
             
-        </>
+        </Grid>
     )
 } 
