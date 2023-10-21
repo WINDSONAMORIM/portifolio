@@ -11,3 +11,7 @@ footer a img{
     padding: 0 25px;
     width: 100%;
 }
+
+.icon:hover{
+    transform: translateY(-10px);
+}

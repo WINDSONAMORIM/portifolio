@@ -1,5 +1,7 @@
 .digitando{
   color: #FFFFFF;
+  font-family: 'Roboto';
+  text-align: center;
 }
 
 .digitando::after {
