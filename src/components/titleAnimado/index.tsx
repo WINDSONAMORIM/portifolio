@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Grid } from "@mui/material"
 import './style.css'
 
 interface SectionProps{
@@ -21,8 +22,8 @@ export const TitleAnimado = (props :SectionProps) => {
     },[]);
 
     return(
-        <>
+        <Grid item>
             <h1 className="digitando">{text}</h1>
-        </>
+        </Grid>
     )
 }

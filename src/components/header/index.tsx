@@ -3,12 +3,13 @@ import { Grid } from "@mui/material"
 
 export const Header = ({children}:{children: React.ReactNode }) => {
     return(
-        <Grid item md={12} lg={2} 
-            sx={{display: "flex",
+        <Grid item sm={12} md={3}
+            sx={{
+                display: "flex",
                 flexDirection: 'column',
-                alignItems: "center",
-                justifyContent: {md: 'flex-start', lg:'center'},
-                margin: '30px'}}>
+                justifyContent: 'center', 
+                alignItems: 'center',            
+                }}>
             {children}
         </Grid>
     )

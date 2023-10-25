@@ -1,0 +1,35 @@
+.containerContact{
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.camada{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    transform: rotate(-30deg) skew(25deg);
+    border-radius: 25%;
+}
+
+.containerContact:hover span:nth-child(4){
+    transform: translate(16px, -32px) rotate(-30deg) skew(25deg);    
+    opacity: 1;
+}
+
+.containerContact:hover span:nth-child(3){
+    transform: translate(12px, -24px) rotate(-30deg) skew(25deg);
+    opacity: .8;
+}
+
+.containerContact:hover span:nth-child(2){
+    transform: translate(8px, -16px) rotate(-30deg) skew(25deg);
+    opacity: .6;
+}
+
+.containerContact:hover span:nth-child(1){
+    transform: translate(4px, -8px) rotate(-30deg) skew(25deg);    
+    opacity: .4;
+}

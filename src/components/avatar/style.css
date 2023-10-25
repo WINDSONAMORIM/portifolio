@@ -4,17 +4,17 @@
   height: 15rem;
   background-color: #1976d2;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
+  align-items: 'center';
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .avatar::after {
   content: "";
   position: absolute;
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   background-image: conic-gradient(
     transparent,
     transparent,
@@ -28,8 +28,8 @@
 .avatar::before {
   content: "";
   position: absolute;
-  width: 50rem;
-  height: 50rem;
+  width: 15rem;
+  height: 15rem;
   background-image: conic-gradient(
     transparent,
     transparent,
@@ -50,10 +50,9 @@
 
 .avatar img {
   position: absolute;
-  background-color: #1976d2;
   border-radius: 50%;
   width: 95%;
   height: 95%;
-  inset: 5px;
+  inset: 6px;
   z-index: 1;
 }

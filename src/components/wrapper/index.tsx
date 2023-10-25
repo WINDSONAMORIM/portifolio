@@ -9,7 +9,7 @@ export const Wrapper = ({children}:{children: React.ReactNode }) => {
                maxWidth:'100wv',  
                height: '100vh',              
                backgroundImage:  `url(${backgroundImage})`,
-               display: {md:'inline-block', lg:'flex'},
+              //  display: {md:'inline-block', lg:'flex'},
             }}>              
                 {children}              
             </Grid>
