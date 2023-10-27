@@ -24,10 +24,10 @@ export const Home =  () => {
             <About />
         </Wrapper>            
         <SocialMedia>
-            <Contact color = "#3b5999" svg={<FacebookIcon fontSize='large' style={{ color: '#ffffff' }} />}/>
-            <Contact color = "#000000" svg={<GitHubIcon fontSize='large' style={{ color: '#ffffff' }} />}/>
-            <Contact color = "#4ECA5C" svg={<WhatsAppIcon fontSize='large' style={{color: '#ffffff'}} />}/>
-            <Contact color = "#0077b5" svg={<LinkedInIcon fontSize='large' style={{ color: '#ffffff' }} />}/>
+            <Contact color = "#3b5999" svg={<FacebookIcon sx={{fontSize:70}} style={{ color: '#ffffff' }} />}/>
+            <Contact color = "#000000" svg={<GitHubIcon sx={{fontSize:70}} style={{ color: '#ffffff' }} />}/>
+            <Contact color = "#4ECA5C" svg={<WhatsAppIcon sx={{fontSize:70}} style={{color: '#ffffff'}} />}/>
+            <Contact color = "#0077b5" svg={<LinkedInIcon sx={{fontSize:70}} style={{ color: '#ffffff' }} />}/>
         </SocialMedia>
         </>
         )

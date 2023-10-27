@@ -3,16 +3,17 @@ import { Box, Grid, Typography } from "@mui/material"
 
 export const About = () => {
     return(
-        <Grid item sm={12} md={9}
+        <Grid item xs={12} lg={9}
              sx={{
                 display:'flex', 
-                alignItems:'center',                 
+                alignItems: {xs: 'flex-start', lg:'center'},
+                justifyContent: {xs:'flex-start', lg:'center'},           
                 p: {md:' 0 2%'}
                 }}
             > 
             <Box sx={{
                 backgroundColor: 'rgba(32, 8, 111, 0.6)',
-                borderRadius: '16px',
+                borderRadius: '25px',
                 boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                 backdropFilter: 'blur(7.3px)',
                 border: '1px solid rgba(255, 255, 255, 0.3)'}}>
