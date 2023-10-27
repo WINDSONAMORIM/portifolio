@@ -8,7 +8,8 @@ export const About = () => {
                 display:'flex', 
                 alignItems: {xs: 'flex-start', lg:'center'},
                 justifyContent: {xs:'flex-start', lg:'center'},           
-                p: {md:' 0 2%'}
+                p: {md:'0 2%'},
+                backgroundColor:'red'
                 }}
             > 
             <Box sx={{
