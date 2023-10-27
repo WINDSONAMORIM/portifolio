@@ -13,21 +13,22 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const Home =  () => {
-    return(        
+    return( 
+        <>
+        <MenuBurguer />
         <Wrapper>
-            <MenuBurguer />
             <Header>
                 <Avatar />
                 <TitleAnimado texto='Desenvolvimento Web' />
             </Header>
             <About />
-            
-            <SocialMedia>
-                <Contact color = "#3b5999" svg={<FacebookIcon style={{ color: '#ffffff' }} />}/>
-                <Contact color = "#000000" svg={<GitHubIcon style={{ color: '#ffffff' }} />}/>
-                <Contact color = "#4ECA5C" svg={<WhatsAppIcon style={{color: '#ffffff'}} />}/>
-                <Contact color = "#0077b5" svg={<LinkedInIcon style={{ color: '#ffffff' }} />}/>
-            </SocialMedia>
-        </Wrapper>
+        </Wrapper>            
+        <SocialMedia>
+            <Contact color = "#3b5999" svg={<FacebookIcon fontSize='large' style={{ color: '#ffffff' }} />}/>
+            <Contact color = "#000000" svg={<GitHubIcon fontSize='large' style={{ color: '#ffffff' }} />}/>
+            <Contact color = "#4ECA5C" svg={<WhatsAppIcon fontSize='large' style={{color: '#ffffff'}} />}/>
+            <Contact color = "#0077b5" svg={<LinkedInIcon fontSize='large' style={{ color: '#ffffff' }} />}/>
+        </SocialMedia>
+        </>
         )
 }

@@ -6,10 +6,12 @@ export const Wrapper = ({children}:{children: React.ReactNode }) => {
       return(
             <Grid container sx=
             {{
-               maxWidth:'100wv',  
-               height: '100vh',              
-               backgroundImage:  `url(${backgroundImage})`,
-              //  display: {md:'inline-block', lg:'flex'},
+               maxWidth:'100vw',  
+               height: '100vh', 
+               backgroundImage: `url(${backgroundImage})`,
+               backgroundRepeat: 'no-repeat',
+               backgroundSize: 'cover',
+               display: {sm: 'block' , md: 'flex'}
             }}>              
                 {children}              
             </Grid>

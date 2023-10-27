@@ -4,10 +4,7 @@ import { Grid } from '@mui/material';
 
 export const SocialMedia = ({children}: {children: React.ReactNode}) => {
     
-    const instagram = require('../../assests/icon/instagram.ico');
-    const whatsapp = require('../../assests/icon/whatsapp.ico');
-    
-    
+    const instagram = require('../../assests/icon/instagram.ico');  
 
     return(
             <Grid container className='footer'>
