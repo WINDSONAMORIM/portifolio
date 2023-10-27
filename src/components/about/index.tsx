@@ -6,19 +6,20 @@ export const About = () => {
         <Grid item xs={12} lg={9}
              sx={{
                 display:'flex', 
+                height: {xs: '70%', lg: '100%'},
                 alignItems: {xs: 'flex-start', lg:'center'},
                 justifyContent: {xs:'flex-start', lg:'center'},           
                 p: {md:'0 2%'},
-                backgroundColor:'red'
                 }}
             > 
             <Box sx={{
+                height: {xs: '90%', lg: 'auto'},
                 backgroundColor: 'rgba(32, 8, 111, 0.6)',
                 borderRadius: '25px',
                 boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                 backdropFilter: 'blur(7.3px)',
                 border: '1px solid rgba(255, 255, 255, 0.3)'}}>
-                <Typography m={2} fontFamily={'Roboto'} fontSize={'1.5rem'} textAlign={'justify'} color="#FFFFFF">
+                <Typography m={2} fontFamily={'Roboto'} variant='h4' textAlign={'justify'} color="#FFFFFF">
                 Olá e bem-vindo(a)
                      É um prazer ter você aqui e poder compartilhar um
                     pouco do meu trabalho na área de desenvolvimento. Neste espaço,

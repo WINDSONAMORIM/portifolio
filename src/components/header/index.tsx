@@ -7,6 +7,7 @@ export const Header = ({children}:{children: React.ReactNode }) => {
             sx={{
                 display: "flex",
                 width: '100%',
+                height: {xs: '30%', lg: '100%'},
                 flexDirection: 'column',
                 justifyContent: 'center', 
                 alignItems: 'center'        
