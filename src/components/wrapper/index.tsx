@@ -10,11 +10,7 @@ export const Wrapper = ({children}:{children: React.ReactNode }) => {
                height: '100vh', 
                backgroundImage: `url(${backgroundImage})`,
                backgroundRepeat: 'no-repeat',
-               backgroundSize: 'cover',
-              //  display: 'flex',
-              //  flexDirection: {xs: 'column', lg: 'row'},
-              //  alignItems: 'center',
-              //  justifyContent: 'center'
+               backgroundSize: 'cover'
             }}>              
                 {children}              
             </Grid>
