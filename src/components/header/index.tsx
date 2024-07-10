@@ -1,18 +1,17 @@
-import React from "react"
-import { Grid } from "@mui/material"
+import React from "react";
+import { Grid } from "@mui/material";
+import { ScrollMenu } from "../scrollMenu";
+import { NameMenu } from "../nameMenu";
 
-export const Header = ({children}:{children: React.ReactNode }) => {
-    return(
-        <Grid item xs={12} lg={3}
-            sx={{
-                display: "flex",
-                width: '100%',
-                height: {xs: '30%', lg: '100%'},
-                flexDirection: 'column',
-                justifyContent: 'center', 
-                alignItems: 'center'        
-                }}>
-            {children}
-        </Grid>
-    )
-}
+export const Header = () => {
+  return (
+    <Grid container display="flex" justifyContent="space-between">
+      <Grid item>
+        <ScrollMenu />
+      </Grid>
+      <Grid item>
+        <NameMenu name="Windson" surname="Marana" />
+      </Grid>
+    </Grid>
+  );
+};

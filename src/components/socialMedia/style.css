@@ -3,17 +3,7 @@
     flex-direction: row;
     justify-content: space-around; 
     align-items: center;   
-    position: absolute;
-    width: 100vw;
-    bottom: 50px;
+    position: relative;
+    /* width: '100%'; */
+    /* bottom: 50px; */
 }
-/* 
-footer a img{
-    margin: 1rem 1rem 0 1rem;
-    padding: 0 25px;
-    width: 100%;
-}
-
-.icon:hover{
-    transform: translateY(-10px);
-} */

@@ -10,7 +10,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 export const SocialMedia = () => {
 
   return (
-    <Grid container justifyContent={{md:"spaceAround", lg:"center"}} className="footer">
+    <Grid container justifyContent={{md:"spaceAround", lg:"space-evenly"}} className="footer">
       <Contact
         color="#3b5999"
         svg={<FacebookIcon style={{ color: "#ffffff" }} />}

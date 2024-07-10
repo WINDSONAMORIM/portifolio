@@ -1,7 +1,7 @@
 .avatar {
   position: relative;
-  width: 15rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
   background-color: #1976d2;
   border-radius: 50%;
   display: flex; 
@@ -13,8 +13,8 @@
 .avatar::after {
   content: "";
   position: absolute;
-  width: 15rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
   background-image: conic-gradient(
     transparent,
     transparent,
@@ -28,8 +28,8 @@
 .avatar::before {
   content: "";
   position: absolute;
-  width: 15rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
   background-image: conic-gradient(
     transparent,
     transparent,
@@ -51,8 +51,8 @@
 .avatar img {
   position: absolute;
   border-radius: 50%;
-  width: 95%;
-  height: 95%;
+  width: 97%;
+  height: 97%;
   inset: 6px;
   z-index: 1;
 }

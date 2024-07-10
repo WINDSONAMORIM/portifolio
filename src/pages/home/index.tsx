@@ -1,34 +1,29 @@
-import React from 'react';
-import { Avatar } from "../../components/avatar";
+import React from "react";
 import { Wrapper } from "../../components/wrapper";
-import { TitleAnimado } from '../../components/titleAnimado';
-import { SocialMedia } from '../../components/socialMedia';
-import { Header } from '../../components/header';
-import { About } from '../../components/about';
-import { MenuBurguer } from '../../components/menu';
-import { Contact } from '../../components/contact';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { Header } from "../../components/header";
+import { SectionDefault } from "../../components/sectionDefault";
+import { SectionAvatar } from "../../components/sectionAvatar";
+import { Box, Grid } from "@mui/material";
+import { SectionProfile } from "../../components/sectionProfile";
+import { CardHardSkill } from "../../components/cardHardSkill";
+import { SectionProjects } from "../../components/sectionProjects";
 
-export const Home =  () => {
-    return( 
-        <>
-        <MenuBurguer />
-        <Wrapper>
-            <Header>
-                <Avatar />
-                <TitleAnimado texto='Desenvolvimento Web' />
-            </Header>
-            <About />
-        </Wrapper>            
-        <SocialMedia />
-            {/* <Contact color = "#3b5999" svg={<FacebookIcon style={{ color: '#ffffff', fontSize: 70 }} />}/>
-            <Contact color = "#000000" svg={<GitHubIcon style={{ color: '#ffffff', fontSize: 70 }} />}/>
-            <Contact color = "#4ECA5C" svg={<WhatsAppIcon style={{color: '#ffffff', fontSize: 70}} />}/>
-            <Contact color = "#0077b5" svg={<LinkedInIcon style={{ color: '#ffffff', fontSize: 70 }} />}/> */}
-        {/* </SocialMedia> */}
-        </>
-        )
-}
+export const Home = () => {
+  return (
+    <>
+      <Wrapper>
+        <Header />
+        <Grid container display="flex" flexDirection="row">
+          <Grid item xs={6}>
+            <SectionAvatar />
+          </Grid>
+
+          <Grid item xs={6}>
+            <SectionProfile />
+          </Grid>
+        </Grid>
+        <SectionProjects />
+      </Wrapper>
+    </>
+  );
+};
