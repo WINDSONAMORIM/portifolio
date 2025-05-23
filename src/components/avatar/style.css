@@ -1,8 +1,8 @@
 .avatar {
   position: relative;
-  width: 25rem;
-  height: 25rem;
-  background-color: #1976d2;
+  width: 20rem;
+  height: 20rem;
+  /* background-color: #1976d2; */
   border-radius: 50%;
   display: flex; 
   align-items: 'center';
@@ -13,14 +13,15 @@
 .avatar::after {
   content: "";
   position: absolute;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   background-image: conic-gradient(
     transparent,
     transparent,
     transparent,
     #d400d4
   );
+  filter: blur(0.5rem);
   animation: animate 4s linear infinite;
   animation-delay: -2s;
 }
@@ -28,14 +29,15 @@
 .avatar::before {
   content: "";
   position: absolute;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   background-image: conic-gradient(
     transparent,
     transparent,
     transparent,
     #00ccff
   );
+  filter: blur(0.5rem);
   animation: animate 4s linear infinite;
 }
 
@@ -49,10 +51,11 @@
 }
 
 .avatar img {
-  position: absolute;
+  position: relative;
   border-radius: 50%;
-  width: 97%;
-  height: 97%;
-  inset: 6px;
+  width: 125%;
+  height: 125%;
+  top: -13%;
+  left: -13%;
   z-index: 1;
 }

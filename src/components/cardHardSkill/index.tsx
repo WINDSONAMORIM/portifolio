@@ -5,15 +5,14 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Link } from "@mui/material";
 
-export const CardHardSkill = () => {
-  const logoCSS = require("../../assests/images/css.jpg");
-  const styles = {
-    width: "100%",
-    height: "140px",
-    objectFit: "cover",
-  };
+interface CardHardSkillProps {
+  thumbnail: string;
+  title: string;
+}
+
+export const CardHardSkill = ({thumbnail, title}:CardHardSkillProps) => {
   return (
     <Grid
       item
@@ -39,18 +38,18 @@ export const CardHardSkill = () => {
         <CardMedia
           component="img"
           height="140"
-          image={logoCSS}
+          image={thumbnail}
           sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
         />
         <CardContent>
-          <Typography variant="h5">CSS</Typography>
+          <Typography variant="h5">{title}</Typography>
           <Box
             sx={{
               position: "absolute",
               top: 0,
-              left:0,
-              width: '100%',
-              height: '100%',
+              left: 0,
+              width: "100%",
+              height: "100%",
               margin: "0 auto",
               backgroundColor: "#040203",
               opacity: 0,
@@ -58,12 +57,19 @@ export const CardHardSkill = () => {
               "&:hover": { opacity: 0.7 },
             }}
           >
-            <Typography variant="body2" color="white">
-              Projeto feito usando HTML, CSS e JavaScript
-            </Typography>
-            <Typography variant="body2" color="white">
-              🔗 Ver no GitHub Pages
-            </Typography>
+            <Link
+              href="http://127.0.0.1:5501/index.html"
+              underline="none"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Typography variant="body2" color="white">
+                Projeto feito usando HTML, CSS e JavaScript
+              </Typography>
+              <Typography variant="body2" color="white">
+                🔗 Ver no GitHub Pages
+              </Typography>
+            </Link>
           </Box>
           <Typography variant="body2">
             Aqui você irá encontrar projetos que realizei para a praticar minhas

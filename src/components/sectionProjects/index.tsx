@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { CardHardSkill } from "../cardHardSkill";
+import pokedexThumbnail from "../../assests/thumbnail/pokedex.png";
 
 export const SectionProjects = () => {
   return (
@@ -9,7 +10,7 @@ export const SectionProjects = () => {
       </Typography>
       <Grid container>
         <Grid item>
-            <CardHardSkill />
+            <CardHardSkill thumbnail={pokedexThumbnail} title="Pokedex"/>
         </Grid>
       </Grid>
     </Box>

@@ -3,10 +3,15 @@ import { Grid } from "@mui/material"
 import './style.css'
 
 interface SectionProps{
-    texto: string
+    texto: string,
+    onComplete?: ()=>void;
+    // showCursor?: boolean;
+    className?: string;
 }
 
-export const TitleAnimado = (props :SectionProps) => {
+export const TitleAnimado = ({texto, onComplete, 
+    // showCursor = false, 
+    className}: SectionProps) => {
 
     const [text, setText] = useState('');
 
@@ -14,16 +19,23 @@ export const TitleAnimado = (props :SectionProps) => {
         if(i < text.length){
             setText(text.slice(0, i + 1))
             setTimeout(() => ativaLetra(text, i + 1),100);
+        }else{
+            onComplete?.();
         }
     }
 
     useEffect(()=>{
-        setTimeout(()=> ativaLetra(props.texto));
+        setTimeout(()=> ativaLetra(texto));
     },[]);
 
     return(
         <Grid item>
-            <h1 className="digitando">{text}</h1>
+            <h1 className={`${className}`}>{text}</h1>
         </Grid>
     )
 }
+/* <Grid item>
+    <h1 className={`${className} 
+        ${!showCursor ? 'sem-cursor' : ''}
+       `}>{text}</h1>
+</Grid> */

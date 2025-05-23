@@ -1,0 +1,31 @@
+.tagList {
+  width: clamp(300px, 90vw, 800px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  mask: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  animation: scroll linear infinite;
+}
+
+.tag {
+  padding: 0 10px;
+  flex-shrink: 0;
+}
+
+.tag img {
+  width: 70px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
