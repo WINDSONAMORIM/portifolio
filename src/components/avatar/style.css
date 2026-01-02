@@ -1,5 +1,36 @@
+@keyframes circuitPulse {
+  0% {
+    filter: drop-shadow(0 0 6px rgba(0, 180, 255, 0.3));
+    opacity: 0.85;
+  }
+  50% {
+    filter: drop-shadow(0 0 14px rgba(0, 180, 255, 0.7));
+    opacity: 1;
+  }
+  100% {
+    filter: drop-shadow(0 0 6px rgba(0, 180, 255, 0.3));
+    opacity: 0.85;
+  }
+}
+
+@keyframes leafFloat {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(2deg) translateY(-4px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
+
 .logo{
   width: 100%;
   height: 100%;
   object-fit: contain;
+  animation: 
+    circuitPulse 3s infinite,
+    leafFloat 6s ease-in-out infinite;
 }
