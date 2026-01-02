@@ -1,15 +1,12 @@
 import React from "react";
 import "./style.css";
+// const perfilImage = require("../../assets/images/perfil-removebg-preview.png");
 
 export const Avatar = () => {
-  const perfilImage = require("../../assets/images/perfil-removebg-preview.png");
+  const perfilImage = require("../../assets/images/logo2.png");
   return (
     <div className="content">
-      <div 
-      // className="avatar"
-      >
-        <img src={perfilImage} alt="logo ou foto do Perfil"/>
-      </div>
+        <img className='logo' src={perfilImage} alt="logo ou foto do Perfil"/>
     </div>
   );
 };

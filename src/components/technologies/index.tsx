@@ -5,6 +5,10 @@ import react from "../../assets/svg/react_icon.svg";
 import node from "../../assets/svg/node_icon.svg";
 import typeScript from "../../assets/svg/type_icon.svg";
 import vscode from "../../assets/svg/vscode_icon.svg";
+import mui from "../../assets/svg/mui_icon.svg";
+import python from "../../assets/svg/python_icon.svg";
+import postgres from "../../assets/svg/postgresql_icon.svg";
+import git from "../../assets/svg/git_icon.svg";
 
 import React, { useEffect, useRef } from "react";
 import "./style.css"; // Estilos separados para organização
@@ -17,6 +21,10 @@ const icons = [
   { src: typeScript, alt: "typescript" },
   { src: react, alt: "react" },
   { src: node, alt: "node" },
+  { src: mui, alt: "mui" },
+  { src: python, alt: "python" },
+  { src: postgres, alt: "postgres" },
+  { src: git, alt: "git" },
 ];
 
 export const Technologies: React.FC = () => {

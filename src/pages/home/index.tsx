@@ -5,6 +5,7 @@ import { Avatar } from "../../components/avatar";
 import { Wrapper } from "../../components/wrapper";
 import { TitleAnimado } from "../../components/titleAnimado";
 import { Technologies } from "../../components/technologies";
+import { Project } from "../project";
 
 export const Home = () => {
   const [firstTitleComplete, setFirstTitleComplete] = useState(false);
@@ -14,12 +15,13 @@ export const Home = () => {
       <Wrapper>
         <Grid
           container
-          display="flex"
-          flexDirection="row"
-          alignItems="center"
-          padding="15px"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={12} md={4}>
             <TitleAnimado
               texto="Desenvolvedor Web"
               onComplete={() => {
@@ -30,11 +32,18 @@ export const Home = () => {
             />
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={4}
+            display="flex"
+            justifyContent="center"
+          >
             <Avatar />
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={12} md={4}>
             {showSecondTitle && (
               <TitleAnimado
                 className="digitando"
@@ -46,6 +55,9 @@ export const Home = () => {
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Technologies />
         </Box>
+      </Wrapper>
+      <Wrapper>
+        <Project />
       </Wrapper>
     </>
   );
