@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 h1{
   color: #FFFFFF;
-  font-family: 'Roboto';
+  font-family: 'Cinzel';
   text-align: center;
 }
 
 .digitando{
   color: #FFFFFF;
-  font-family: 'Roboto';
+  font-family: 'Cinzel';
   text-align: center;
 }
 
